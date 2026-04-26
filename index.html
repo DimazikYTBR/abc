@@ -40,14 +40,21 @@
         ::-webkit-scrollbar-track { background: var(--bg-gray); border-radius: 10px; }
         ::-webkit-scrollbar-thumb { background: var(--primary-blue); border-radius: 10px; }
         ::-webkit-scrollbar-thumb:hover { background: #0058cc; }
-        body { transition: background 0.3s ease, color 0.3s ease; align-items: center; }
+        body {
+            margin: 0;
+            font-family: 'Inter', -apple-system, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
         body.dark { --bg-gray: #1a1a2e; --card-bg: #16213e; --border-light: #2a2a4a; --text-dark: #f0f0f0; --text-muted: #b0b0c0; --primary-blue-light: #0f3460; --shadow-sm: 0 4px 12px rgba(0,0,0,0.2); --shadow-md: 0 8px 24px rgba(0,0,0,0.3); --shadow-hover: 0 12px 28px rgba(0,0,0,0.4); background: #1a1a2e; }
         body.light { --bg-gray: #f5f7fb; --card-bg: #ffffff; --border-light: #eef2f6; --text-dark: #1a2634; --text-muted: #5e6f8d; --primary-blue-light: #e6f0ff; --shadow-sm: 0 4px 12px rgba(0,0,0,0.04); --shadow-md: 0 8px 24px rgba(0,0,0,0.06); --shadow-hover: 0 12px 28px rgba(0,0,0,0.08); background: #f5f7fb; }
         :root { --primary-blue: #0072F5; --bpeight-color: #000000; --lol-color: #0A323D; --blackrussia-color: #1a1a2e; --twitch-color: #9146FF; --wow-color: #2359ff; --oxide-color: #E6A817; --oncehuman-color: #4CAF50;  --wotb-color: #F5A623; --crk-color: #C7A317; --diablo-color: #9B2C2C; --chatgpt-color: #10A37F; --codm-color: #FFCF40; --imo-color: #003153; --battlenet-color: #148eff; --success-green: #17c964; --error-red: #f31260; --hytale-color: #6B4E9E; --warning-orange: #f5a623; --gold-color: #FFB800; --premium-color: #26A5E4; --roblox-color: #E63B2E; --pubg-color: #e67e22; --hoyoverse-color: #6b4e9e; --likee-color: #FF3B6F; --vk-color: #0077FF; --brawl-color: #F9A826; --discord-color: #5865F2; --mlbb-color: #0055AA; --clash-color: #E63B2E; --youtube-color: #FF0000; --valorant-color: #ff4655; --minecraft-color: #44aa33; --freefire-color: #FF6B00; --bloodstrike-color: #8B0000; --identityv-color: #4A2F1A; --arenabreakout-color: #2E8B57; --deltaforce-color: #1E90FF; --wherewinds-color: #9370DB; --pubgpc-color: #FFA500; --spotify-color: #1DB954; --apple-color: #A2AAAD; --googleplay-color: #34A853; --netflix-color: #E50914; --playstation-color: #006FCD; --xbox-color: #107C10; --nintendo-color: #E60012; --fortnite-color: #2D8EFF; --fcmobile-color: #2E8B57; --steam-color: #1b2838; --stalcraft-color: #8B4513; --hayday-color: #7CB342; --cs2-color: #FFA500; --marvel-color: #E23636; --tiktok-color: #010101; --honkai3-color: #6B4E9E; }
         body { background: var(--bg-gray); min-height: 100vh; color: var(--text-dark); }
         
         header {
-    width: 70%;
+    width: 100%;
     height: 70px;
     display: flex;
     justify-content: center;
