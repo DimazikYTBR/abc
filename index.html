@@ -437,5 +437,13 @@ header {
     </div>
 </footer>
 
+<script>
+    const logoHomeElement = document.getElementById('logoHome');
+    if (logoHomeElement) {
+        const newLogo = logoHomeElement.cloneNode(true);
+        logoHomeElement.parentNode.replaceChild(newLogo, logoHomeElement);
+        newLogo.addEventListener('click', () => { showPage('mainPage'); window.location.hash = ''; sessionStorage.removeItem('lastGame'); });
+    }
+</script>
 </body>
 </html>
