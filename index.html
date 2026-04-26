@@ -46,6 +46,15 @@
         :root { --primary-blue: #0072F5; --bpeight-color: #000000; --lol-color: #0A323D; --blackrussia-color: #1a1a2e; --twitch-color: #9146FF; --wow-color: #2359ff; --oxide-color: #E6A817; --oncehuman-color: #4CAF50;  --wotb-color: #F5A623; --crk-color: #C7A317; --diablo-color: #9B2C2C; --chatgpt-color: #10A37F; --codm-color: #FFCF40; --imo-color: #003153; --battlenet-color: #148eff; --success-green: #17c964; --error-red: #f31260; --hytale-color: #6B4E9E; --warning-orange: #f5a623; --gold-color: #FFB800; --premium-color: #26A5E4; --roblox-color: #E63B2E; --pubg-color: #e67e22; --hoyoverse-color: #6b4e9e; --likee-color: #FF3B6F; --vk-color: #0077FF; --brawl-color: #F9A826; --discord-color: #5865F2; --mlbb-color: #0055AA; --clash-color: #E63B2E; --youtube-color: #FF0000; --valorant-color: #ff4655; --minecraft-color: #44aa33; --freefire-color: #FF6B00; --bloodstrike-color: #8B0000; --identityv-color: #4A2F1A; --arenabreakout-color: #2E8B57; --deltaforce-color: #1E90FF; --wherewinds-color: #9370DB; --pubgpc-color: #FFA500; --spotify-color: #1DB954; --apple-color: #A2AAAD; --googleplay-color: #34A853; --netflix-color: #E50914; --playstation-color: #006FCD; --xbox-color: #107C10; --nintendo-color: #E60012; --fortnite-color: #2D8EFF; --fcmobile-color: #2E8B57; --steam-color: #1b2838; --stalcraft-color: #8B4513; --hayday-color: #7CB342; --cs2-color: #FFA500; --marvel-color: #E23636; --tiktok-color: #010101; --honkai3-color: #6B4E9E; }
         body { background: var(--bg-gray); min-height: 100vh; color: var(--text-dark); }
         
+        header {
+    display: flex;
+    justify-content: center; /* Всё содержимое в центр */
+    align-items: center;
+    gap: 30px;               /* Твой фирменный отступ между элементами */
+    padding: 15px 0;
+    width: 100%;
+}
+
         /* Анимации */
         @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
         @keyframes fadeInRight { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
